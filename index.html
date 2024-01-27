@@ -4,31 +4,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="estilo.css">
     <title>Spotify</title>
 </head>
 
 <body>
     <div class="sidebar">
-        <nav>
-            <div>
+        <nav class="sidebar__navigation">
+            <div class="logo">
                 <a href="">
                     <img src="assests/icons/logo-spotify.png" alt="logo Spotify">
-                </a>
-                <div class="lista">
-                    <ul>
-                        <li>
-                            <a href="">
-                                <span></span>
-                                <span>Início</span>
-                            </a>
-                        </li>
-                        <li>Buscar</li>
-                    </ul>
-                </div>
+            </div>
+            </a>
+            <div class="lista">
+                <ul>
+                    <li>
+                        <a href="">
+                            <span></span>
+                            <span>Início</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span><img src="assests/icons/search.png" alt=""></span>
+                            <span>Buscar</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </nav>
+
+        <div class="library">
+            <div class="library__content">
+                <button class="library__button">
+                    <!--Colocar favcon de livro na span-->
+                    <span class="livro"><img src="assests/icons/icons8-livro-24.png" alt=""></span>
+                    <span>Sua Biblioteca</span>
+                </button>
+                <!--Colocar favcon de + na span-->
+                <span class="plus"><img src="assests/icons/icons8-soma-24 (2).png" alt=""></span>
+            </div>
+
+            <section class="section-playlist">
+                <div class="section-playlist__content">
+                    <span class="text title">Crie sua primeira playlist</span>
+                    <span class="subtititle">É fácil, vamos te ajudar </span>
+                    <button class="section-playlist__button">
+                        <span>Criar playlist</span>
+                    </button>
+
+                </div>
+            </section>
+            <div class="cookies">
+                <a href="">Cookies</a>
+            </div>
+
+            <div class="languages">
+                <button class="languages_button">
+                    <!--Colocar favcon de globo na span-->
+                    <span class="globo"><img src="assests/icons/icons8-globo-50.png" alt=""></span>
+                    <span>Português do Brasil</span>
+                </button>
+            </div>
+        </div>
+
     </div>
+
+
 </body>
 
 </html>
